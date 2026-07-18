@@ -608,75 +608,27 @@
                 <button onclick="filterGallery('all')" class="gallery-tab-btn active-gallery-tab px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 bg-hoian-river text-white shadow-md">All Photos</button>
                 <button onclick="filterGallery('rooms')" class="gallery-tab-btn px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">Rooms</button>
                 <button onclick="filterGallery('outdoor')" class="gallery-tab-btn px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">Gardens & Views</button>
-                <button onclick="filterGallery('experience')" class="gallery-tab-btn px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">Experiences</button>
             </div>
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
                 
+                <!-- Item 1 (Outdoor) -->
+                <div class="gallery-item outdoor relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(1)">
+                    <img src="https://raw.githubusercontent.com/songriverhomestay/songriver/refs/heads/main/songriver1.jpg?auto=format&fit=crop&w=600&q=80" alt="Song River Garden and View" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
+                    </div>
+                </div>
                 <!-- Item 1 (Rooms) -->
                 <div class="gallery-item rooms relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(0)">
-                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Deluxe Double Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <img src="https://raw.githubusercontent.com/songriverhomestay/songriver/refs/heads/main/room1-1?auto=format&fit=crop&w=600&q=80" alt="Superior Queen Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
                         <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
                     </div>
                 </div>
 
-                <!-- Item 2 (Outdoor) -->
-                <div class="gallery-item outdoor relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(1)">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="River View terrace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 3 (Experience) -->
-                <div class="gallery-item experience relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(2)">
-                    <img src="https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=600&q=80" alt="Bamboo basket boats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 4 (Rooms) -->
-                <div class="gallery-item rooms relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(3)">
-                    <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=80" alt="Deluxe Family Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 5 (Outdoor) -->
-                <div class="gallery-item outdoor relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(4)">
-                    <img src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=600&q=80" alt="Hoi An Lantern Street" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 6 (Experience) -->
-                <div class="gallery-item experience relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(5)">
-                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=600&q=80" alt="Specialty breakfast" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 7 (Rooms) -->
-                <div class="gallery-item rooms relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(6)">
-                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80" alt="Budget Double Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Item 8 (Outdoor) -->
-                <div class="gallery-item outdoor relative group aspect-square overflow-hidden rounded-2xl cursor-pointer" onclick="openLightbox(7)">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Cua Dai Beach views" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-magnifying-glass-plus text-2xl"></i>
-                    </div>
-                </div>
+              
 
             </div>
         </div>
